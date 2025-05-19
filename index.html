@@ -1,43 +1,170 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Velveta - Nuova Collezione</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css" />
-  <script defer src="./js/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velveta - Moda per Lei & Lui</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;700&family=Space+Mono&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --verde-pastello: #a2e4b8;
+      --crema: #fffdd0;
+      --rosa: #ffd1dc;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--crema);
+      color: #222;
+    }
+
+    header {
+      background-color: var(--verde-pastello);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      margin-left: 1.5rem;
+      font-weight: 600;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .img {
+      height: 550px;
+      width: auto;
+    }
+
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .section-men {
+      background-color: var(--rosa);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .img-men {
+      height: 550px;
+      width: auto;
+    }
+
+    .section-men h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .section-men p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    footer {
+      background-color: var(--verde-pastello);
+      text-align: center;
+      padding: 1rem;
+      font-family: 'Space Mono', monospace;
+    }
+
+    button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 0.7rem 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+  </style>
 </head>
 <body>
-  <header class="main-header">
+
+  <header>
     <h1>Velveta</h1>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="chi_siamo.html">Chi Siamo</a></li>
-        <li><a href="policy_azienda.html">Policy</a></li>
-        <li><a href="contatti.html">Contatti</a></li>
-      </ul>
+      <a href="#">Home</a>
+      <a href="#">Donna</a>
+      <a href="#">Uomo</a>
+      <a href="#">Contatti</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>Nuova Collezione</h2>
-    <p>Scopri la nostra nuova collezione</p>
-    <a href="#" class="btn">Acquista Ora!</a>
+    <table class="women">
+      <tr>
+        <td>
+          <img src="./assets/fashion-2309519_1280.jpg" alt="Immagine" class="img">
+        </td>
+        <td>
+    <h2>Eleganza Femminile</h2>
+    <p>Scopri la nostra nuova collezione pensata per la donna moderna: delicata, decisa, unica.</p>
+    <button onclick="alert('Naviga alla sezione Donna')">Esplora Donna</button>
+    </td>
+  </tr>  
+  </table>
   </section>
 
-  <section class="scopri-collezione">
-    <h3>Scopri la nostra nuova collezione</h3>
-    <p>Esplora stili freschi e materiali sostenibili.</p>
-  </section>
-
-  <section class="materiali">
-    <h3>Scopri i materiali sostenibili</h3>
+  <section class="section-men">
+    <table class="men">
+    <tr>
+        <td>
+    <h2>Stile Maschile</h2>
+    <p>Una selezione esclusiva per l’uomo contemporaneo: essenziale, raffinato, distintivo.</p>
+    <button onclick="alert('Naviga alla sezione Uomo')">Esplora Uomo</button>
+    </td>
+    <td>
+          <img src="./assets/fashion-2309519_1280.jpg" alt="Immagine" class="img-men">
+    </td>
+    </tr>
+    </table>
   </section>
 
   <footer>
-    <p>&copy; 2025 Copyright. Velveta</p>
+    <p>&copy; 2025 Velveta · Moda per Lei & Lui</p>
   </footer>
+
+  <script>
+    // Piccolo script per eventuali animazioni future
+    document.querySelectorAll('button').forEach(btn => {
+      btn.addEventListener('mouseenter', () => {
+        btn.style.transform = 'scale(1.05)';
+      });
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = 'scale(1)';
+      });
+    });
+  </script>
+
 </body>
 </html>
