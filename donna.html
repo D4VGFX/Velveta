@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Velveta | Donna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;700&family=Space+Mono&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --verde-pastello: #a2e4b8;
+      --rosa: #ffd1dc;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--rosa);
+      color: #222;
+    }
+
+    html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-container > footer {
+  margin-top: auto;
+}
+
+
+    header {
+      background-color: var(--verde-pastello);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      margin-left: 1.5rem;
+      font-weight: 600;
+    }
+
+    .content {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+    }
+
+    .content p {
+      max-width: 600px;
+      margin: 1rem auto;
+      font-size: 1.1rem;
+    }
+
+    button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 0.7rem 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+
+    footer {
+      background-color: var(--verde-pastello);
+      text-align: center;
+      padding: 1rem;
+      font-family: 'Space Mono', monospace;
+    }
+  </style>
+</head>
+<body>
+    <div class="page-container">
+  <header>
+    <h1>Velveta</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="donna.html">Donna</a>
+      <a href="uomo.html">Uomo</a>
+      <a href="#">Contatti</a>
+    </nav>
+  </header>
+  <section class="content">
+    <h2>Collezione Donna</h2>
+    <p>Benvenuta nel mondo di Velveta: uno spazio dove la moda incontra l’anima. Esplora capi pensati per esprimere la tua femminilità in ogni occasione.</p>
+    <button onclick="alert('Scopri di più!')">Scopri la collezione</button>
+  <div>
+    <table style="margin-top: 20px;">
+        <tr>
+    <td>
+        <img src="./assets/donna1.png" alt="Look donna 1" style="height: 239px; width: auto;">
+    <img src="./assets/donna2.png" alt="Look donna 2" style="height: 239px; width: auto;">
+        <img src="./assets/donna3.png" alt="Look donna 3" style="height: 239px; width: auto;">
+    <img src="./assets/donna4.png" alt="Look donna 4" style="height: 239px; width: auto;">
+    </td>
+    </tr>
+    </table>
+  </div>
+  </section>
+</div>
+  <footer>
+    <p>&copy; 2025 Velveta · Moda per Lei & Lui | Rivenditore Autorizzato</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('button').forEach(btn => {
+      btn.addEventListener('mouseenter', () => btn.style.transform = 'scale(1.05)');
+      btn.addEventListener('mouseleave', () => btn.style.transform = 'scale(1)');
+    });
+  </script>
+</body>
+</html>

@@ -106,6 +106,22 @@
     button:hover {
       background-color: #333;
     }
+
+    .button-link {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.button-link:hover {
+  background-color: #333;
+}
   </style>
 </head>
 <body>
@@ -114,9 +130,9 @@
     <h1>Velveta</h1>
     <nav>
       <a href="#" style="font-weight:900;">Home</a>
-      <a href="#">Donna</a>
-      <a href="#">Uomo</a>
-      <a href="#">Contatti</a>
+      <a href="./donna.html">Donna</a>
+      <a href="./uomo.html">Uomo</a>
+      <a href="./contatti.html">Contatti</a>
     </nav>
   </header>
 
@@ -129,7 +145,7 @@
         <td>
     <h2>Stile Maschile</h2>
     <p>Una selezione esclusiva per l’uomo contemporaneo: essenziale, raffinato, distintivo.</p>
-    <button href="#">Esplora Uomo</button>
+    <a class="button-link" href="./uomo.html">Esplora Uomo</a>
     </td>
   </tr>  
   </table>
@@ -141,7 +157,7 @@
         <td>
     <h2>Eleganza Femminile</h2>
     <p>Scopri la nostra nuova collezione pensata per la donna moderna: delicata, decisa, unica. </p>
-    <button href="#">Esplora Donna</button>
+    <a class="button-link" href="./donna.html">Esplora Donna</a>
     </td>
     <td>
           <img src="./assets/fashion-2309519_1280.png" alt="Immagine" class="img-men">
@@ -151,7 +167,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Velveta · Moda per Lei & Lui</p>
+    <p>&copy; 2025 Velveta · Moda per Lei & Lui | Rivenditore Autorizzato</p>
   </footer>
 
   <script>
